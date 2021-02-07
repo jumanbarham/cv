@@ -53,6 +53,12 @@
             <a href="https://wafaankoush99github.io/healthy/">more information</a> &copy; Juman
         </footer>
     </main>
+    <div id="radioGoup">
+        <input type="radio" id="male" name="gender" value="male" onclick="check()">
+        <label for="male">Male</label><br>
+
+
+    </div>
     <script>
         var Elem = document.createElement("ul");
         var node1 = document.createElement("li");
@@ -72,6 +78,28 @@
 
 
         document.getElementById("dynamicElem").appendChild(Elem);
+
+        var Elem2 = document.createElement("input");
+        Eleme2.setAttribut("type", "radio");
+        Eleme2.setAttribut("id", "female");
+        Eleme2.setAttribut("name", "gender");
+        Eleme2.setAttribut("value", "female");
+        document.getElementById("radioGoup").appendChild(Eleme2);
+
+        function check() {
+            if (this.value === "male") {
+                var x1 = document.createTextNode("Male is chosen.");
+                document.getElementById("radioGoup").appendChild(x1);
+
+            }
+        }
+
+
+
+
+
+
+        var Elem3 = document.creat
     </script>
 </body>
 
