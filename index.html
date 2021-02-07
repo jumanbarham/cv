@@ -54,16 +54,24 @@
         </footer>
     </main>
     <script>
-        var node = document.createElement("li");
+        var Elem = document.createElement("ul");
+        var node1 = document.createElement("li");
         var x1 = document.createTextNode("Moon");
+        var node2 = document.createElement("li");
         var x2 = document.createTextNode("Star");
+        var node3 = document.createElement("li");
         var x3 = document.createTextNode("Earth");
-        node.appendChild(x1);
-        node.appendChild(x2);
-        node.appendChild(x3);
+        node1.appendChild(x1);
+        node2.appendChild(x2);
+        node3.appendChild(x3);
+
+        Elem.appendChild(node1);
+        Elem.appendChild(node2);
+        Elem.appendChild(node3);
 
 
-        document.getElementById("dynamicElem").appendChild(node);
+
+        document.getElementById("dynamicElem").appendChild(Elem);
     </script>
 </body>
 
