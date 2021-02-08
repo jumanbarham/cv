@@ -90,6 +90,47 @@
 
                 </div>
 
+
+
+
+                <h3>Animal shop</h3>
+
+
+                <h4>cat or dog</h4>
+
+
+                <div>
+
+
+                    <script>
+                        var  order  =  prompt("what do you want cat or dog?");
+
+
+                                    
+                        while  (order  !==  "cat"  &&  order  !==  "dog")  {                
+                            var  order  =  prompt("what do you want cat or dog?");            
+                        }            
+                        var  itemOrder  =  "";            
+                        if  (order  ==  "cat")  {                
+                            itemOrder  =  '<img src="cat.jpg"/>';            
+                        } 
+                        else  if  (order  ==  "dog")  {                
+                            itemOrder  =  '<img src="dog.jpg" />';            
+                        }            
+                        var   numofanimals =  prompt("what is the number of animals ?");
+
+                                   
+                        var  result  =  "";
+
+                                   
+                        for  (var  i  =  0;  i  <  numofanimals;  i++)  {                
+                            result  =  result  +  itemOrder;            
+                        }            
+                        document.write(result);
+                    </script>
+
+                </div>
+
                 <script>
                     var  Elem  =  document.createElement("ul");        
                     var  node1  =  document.createElement("li");        
@@ -109,10 +150,11 @@
                     Elem.appendChild(node3);
 
 
-
+                    console.log(Elem);
 
                             
-                    document.getElementById("dynamicElem").appendChild(Elem);
+                    var div = document.getElementById("dynamicElem")
+                    div.innerHTML(Elem);
 
 
                             
@@ -133,44 +175,6 @@
                         }        
                     }
                 </script>
-
-
-                <h3>Animal shop</h3>
-
-
-                <h4>cat or dog</h4>
-
-                <div>
-
-
-                    <script>
-                        var  order  =  prompt("what do you want cat or dog?");
-
-
-                                    
-                        while  (order  !==  "cat"  &&  order  !==  "dog")  {                
-                            var  order  =  prompt("what do you want cat or dog?");            
-                        }            
-                        var  itemOrder  =  "";            
-                        if  (order  ==  "cat")  {                
-                            itemOrder  =  '<img src="cat.jpg" />';            
-                        } 
-                        else  if  (order  ==  "dog")  {                
-                            itemOrder  =  '<img src="dog.jpg" />';            
-                        }            
-                        var  numofanimals  =  prompt("what is the number of animals ?");
-
-                                   
-                        var  result  =  "";
-
-                                   
-                        for  (var  i  =  0;  i  <  numofanimals;  i++)  {                
-                            result  =  result  +  itemOrder;            
-                        }            
-                        document.write(result);
-                    </script>
-
-                </div>
 </body>
 
 
