@@ -144,53 +144,6 @@
 
         </div>
 
-        <script>
-            var  Elem  =  document.createElement("ul");        
-            var  node1  =  document.createElement("li");        
-            var  x1  =  document.createTextNode("Moon");        
-            var  node2  =  document.createElement("li");        
-            var  x2  =  document.createTextNode("Star");        
-            var  node3  =  document.createElement("li");        
-            var  x3  =  document.createTextNode("Earth");        
-            node1.appendChild(x1);        
-            node2.appendChild(x2);        
-            node3.appendChild(x3);
-
-
-                    
-            Elem.appendChild(node1);        
-            Elem.appendChild(node2);        
-            Elem.appendChild(node3);
-
-
-            console.log(Elem);
-
-                    
-            var div = document.getElementById("dynamicElem")
-            div.appendChild(Elem);
-
-
-                    
-            var  Elem2  =  document.createElement("input");        
-            Elem2.setAttribute("type",  "radio");        
-            Elem2.setAttribute("id",  "female");        
-            Elem2.setAttribute("name",  "gender");        
-            Elem2.setAttribute("value",  "female");        
-            document.getElementById("radioGoup").appendChild(Elem2);
-
-               
-            function  check()  { 
-                console.log("hello")           
-                if  (document.getElementById("male").value  ===  "male")  {                
-                    var  x1  =  document.createTextNode("female."); 
-                    console.log("hello")           
-                    document.getElementById("radioGoup").appendChild(x1);
-
-                                
-                }        
-            }
-        </script>
-
         <form action="/action_page.php">
             <p>Please select your type music:</p>
             <input type="radio" id="jazz" name="music" value="jazz">
@@ -206,7 +159,6 @@
             <h4>cat or dog</h4>
 
             <div>
-
 
                 <script>
                     var  order  =  prompt("what do you want cat or dog?");
@@ -234,6 +186,54 @@
                     }            
                     document.write(result);
                 </script>
+
+                <script>
+                    var  Elem  =  document.createElement("ul");        
+                    var  node1  =  document.createElement("li");        
+                    var  x1  =  document.createTextNode("Moon");        
+                    var  node2  =  document.createElement("li");        
+                    var  x2  =  document.createTextNode("Star");        
+                    var  node3  =  document.createElement("li");        
+                    var  x3  =  document.createTextNode("Earth");        
+                    node1.appendChild(x1);        
+                    node2.appendChild(x2);        
+                    node3.appendChild(x3);
+
+
+                            
+                    Elem.appendChild(node1);        
+                    Elem.appendChild(node2);        
+                    Elem.appendChild(node3);
+
+
+                    console.log(Elem);
+
+                            
+                    var div = document.getElementById("dynamicElem")
+                    div.appendChild(Elem);
+
+
+                            
+                    var  Elem2  =  document.createElement("input");        
+                    Elem2.setAttribute("type",  "radio");        
+                    Elem2.setAttribute("id",  "female");        
+                    Elem2.setAttribute("name",  "gender");        
+                    Elem2.setAttribute("value",  "female");        
+                    document.getElementById("radioGoup").appendChild(Elem2);
+
+                       
+                    function  check()  { 
+                        console.log("hello")           
+                        if  (document.getElementById("male").value  ===  "male")  {                
+                            var  x1  =  document.createTextNode("female."); 
+                            console.log("hello")           
+                            document.getElementById("radioGoup").appendChild(x1);
+
+                                        
+                        }        
+                    }
+                </script>
+
 
             </div>
             </body>
